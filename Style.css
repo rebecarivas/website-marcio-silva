@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.entrada{
+    width: 100%;
+    top: 0;
+    filter: grayscale(50%);
+}
+#Home{
+    width: 100%;
+}
+#cabecalho{
+    width: 100%;
+    background-color: #181818;
+    opacity: 0.75;
+    position: fixed;
+    padding: 20px;
+    z-index: 1000;
+}
+.secao{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.barra{
+    margin: auto;
+    width: 80%;
+}
+.logo{
+    color: #d7d1c3; 
+    opacity: 1;
+    float: left;
+    font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.lista1{
+    float: left;
+    color: #d7d1c3;
+    opacity: 1;
+    font-size: 1.3vw;
+    font-family: 'Montserrat', sans-serif;
+}
+.botao{
+    text-decoration: none;
+    padding: 12px;
+    color: #d7d1c3;
+}
+.botao:visited{
+    color: #d7d1c3;
+}
+.botao:hover{
+    padding: 10px;
+    color:#fee180;
+    border: 2px solid #fee180;
+    text-decoration: none;
+}
+
+#Bio{
+    background-color: #181818;
+    width: 100%;
+}
+.titulo{
+    text-align: center;
+    color: #fee180;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 7px;
+}
+.biografia{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.fotobio{
+    width: 400px;
+    border: 6px solid white;
+    margin-left: 20px;
+    }
+.textobio{
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1.1vw;
+    font-family: 'Montserrat', sans-serif;
+    color:#d7d1c3;
+    width: 400px;
+    display: inline-block;
+    transform: translateY(50%);
+    margin-right: 20px;
+}
+
+#Discografia{
+    background-color: #202020;   
+}
+.disk{
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.total{
+    position: relative;
+    display: inline;
+    margin-right: 5%;
+}
+.disco{
+    width: 20%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: inline-block; 
+    transform: translateX(50%);
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: 6px solid white;
+}
+.meio{
+  transition: .5s ease;
+  opacity: 0;
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.total:hover .disco {
+    opacity: 0.3;
+  }
+.total:hover .meio {
+    opacity: 0.7;
+  }
+.legenda{
+    background-color: gray;
+    color: #d7d1c3;
+    font-size: 16px;
+    font-size: 1.1vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+
+#Composicoes{
+    background-color: #181818;
+    background-image: url(./Imagens/composicao2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.spotify{
+    width: 40%;
+    display: block;
+    margin-left: 10%;
+}
+
+#Galeria{
+    background-color: #202020;
+}
+.todagaleria{
+    display: block;
+    text-align: center;
+}
+.fotogaleria{
+      width: 35%;
+      border: 6px solid white;
+      margin: 10px;
+      display: inline-block; 
+}     
+#Agenda{
+    background-color: #181818;
+}
+.data{
+    border: 3px solid #d7d1c3;
+    display: inline-block;
+    color: #d7d1c3;
+    line-height: 1.5;
+    font-size: 1.1vw;
+    padding: 20px;
+    transform: translateY(-50%);
+}
+.evento{
+    display: inline-block;
+    color: #d7d1c3;
+    line-height: 1.3;
+    font-size: 1.1vw;
+    margin: 5%;
+    text-align: left;
+    max-width: 350px;
+}
+.show{
+    text-align: center;
+    top: 5%;
+}
+.agenda{
+    margin: auto;
+}
+.link{
+    text-decoration: none;
+    color: #d7d1c3;
+}
+.link:visited{
+    color: #d7d1c3;
+    text-decoration: none;
+}
+#Contato{
+    background-color: #202020;
+}
+.icon{
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 3%;
+    position: relative;
+    left: 7%;
+}
+.rede2{
+    margin-left: 2%;
+    position: absolute;
+    top: 50%;
+    height: 60%;
+}
+#footer{
+    background-color: #181818;
+    color: #d7d1c3;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 1.1vw;
+    text-align: center;
+}
+@media screen and (max-width: 800px){
+.textobio{width: 400px;}
+.fotobio{width: 350px; margin-top: 70px; margin-left: auto;}    
+.spotify{margin: auto;}
+.evento{max-width: 200px;}
+.rede2{margin-left: 25px; height: 73px; top: 40px;}
+}
+@media screen and (max-width: 500px){
+    #cabecalho {position: absolute;}
+    .barra{top: 0;}
+    .logo{float: none; text-align: center; font-size: 5vw; top:0;}
+    .menu{float: none;}
+    .lista1{float: none; font-size: 3.5vw; text-align: center; margin-bottom: 5px;margin-top: 5px;}
+    .botao{padding: 2px;}
+    .botao:hover{padding: 4px; border: 1px solid #fee180;}
+    .secao{padding-top: 20px;padding-bottom: 20px;}
+    .titulo{font-size: 7vw;}
+    .biografia{width: 80%; text-align: center; top: 10px;}
+    .subtitulo{padding: 0; margin: 0;}
+    .textobio{width: 250px; margin: auto; font-size: 10px; padding: 0; transform: translateY(+0%);}
+    .fotobio{width: 200px; text-align: center; border: 3px solid white; margin-left: 0px; margin-top: 30px;padding-left: 0;}
+    .disco{border-width: 3px;}
+    .spotify{width: 300px; height: 350px; margin: auto;}
+    .data{font-size: 3.5vw; padding: 10px;}
+    .evento{font-size: 3.5vw;text-align: center; margin: 10px;}
+    .show{position: relative;top: 30px;}
+    .icon{width: 65%;}
+    .rede{width: 35px;}
+    .rede2{margin-left: 20px; height: 40px; top: 20px;}
+    #footer{font-size: 3vw;}
+}
